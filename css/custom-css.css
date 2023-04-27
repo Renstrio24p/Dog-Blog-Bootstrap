@@ -1,0 +1,174 @@
+
+/* Custom CSS Minified */
+
+body {
+    height: 90vh;
+}
+
+.head {
+    position: fixed;
+    z-index: 999;
+    width: calc(100% - 5px 5px);
+    left: 5px;
+    right: 5px;
+    bottom: 95vh;
+    background-color: rgb(255, 255, 255);
+    height:1.9cm;
+}
+
+.container-fluid {
+    justify-content: space-between;
+    margin:5px;
+}
+
+.sidebar {
+    margin-top: 1.9cm;
+    padding: 5px;
+    position: fixed;
+    width: 320px;
+    margin-left: 5px;
+    height: 100%;
+    background-color: black;
+    transition: .5s;
+}
+
+.sidebar .form-group {
+    border: 2px solid #fff;
+    justify-content: center;
+}
+
+main {  
+    margin-top: 1.9cm;
+    margin: 5px;
+    position: absolute;
+    width: calc(100% - 320px);
+    left: 320px;
+    gap: 20px;
+    z-index: 0;
+    transition: .5s;
+}
+
+section {
+    padding: 20px 30px;
+    margin: 20px;
+}
+
+.hero {
+    width: calc(100% - 10px);
+    height: 100vh;
+    margin-right: 5px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 80;
+}
+
+.btn-form {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    visibility: hidden;
+}
+
+.hero img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.overlay {
+    width: calc(100% - 10px);
+    height: 70vh;
+    background-color: rgba(255, 252, 252, 0.267);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.things {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form-group .align-items-center {
+    border: none;
+}
+
+.form-group .form-check {
+    border: none ;
+}
+
+.form-group .d-md-flex {
+    border: none;
+}
+
+.form-group .a {
+    border: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(177, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 808px) {
+    .sidebar {
+        margin-left: -320px;
+        transition: 0.5s;
+    }  
+
+    main {
+        width: 100%;
+        left: 0;
+        transition: .5s;
+    }
+
+    .title-box img {
+        width: 40vw;
+    }
+    .btn-form {
+        visibility: visible;
+        transition: .5s;
+    }
+}
+
+@media only screen and (max-width: 592px){
+    
+    .title-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .overlay {
+        width: 100%;
+    }
+
+    section {
+        margin-top: 50px;
+        padding: 20px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .things {
+        flex-direction: column;
+    }
+}
